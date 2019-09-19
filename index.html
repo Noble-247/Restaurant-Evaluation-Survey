@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">
+        Restaurant Evaluation Survey
+    </h1>
+    <p id="description">Please let us know your experience with our services. <br> (All Fields Marked with * are complusory).</p>
+    <form action="#" method="GET" id="survey-form">
+        <div class="form-record">
+            <div class="label">
+                <label id="name-label" for="name">* Name: </label>
+            </div>
+            <div class="input-field">
+                <input type="text" name="name" id="name" autofocus required placeholder="Enter your name.....">
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label id="email-label" for="email">* Email: </label>
+            </div>
+            <div class="input-field">
+                <input type="email" name="email" id="email" required placeholder="Enter your email.....">
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label id="number-label" for="age">* Age: </label>
+            </div>
+            <div class="input-field">
+                <input type="number" name="age" id="number" autofocus required placeholder="Enter your age....." min="1" max="125">
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label for="date-visited">* Date Visited: </label>
+            </div>
+            <div class="input-field">
+                <input type="date" name="date-visited" id="date-visited" required>
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label>* Dine In / Take Out: </label>
+            </div>
+            <div class="input-field">
+                <ul>
+                    <li class="radio">
+                        <input type="radio" name="dine-in_take-out" id="dine-in" value="dine-in" checked><label for="dine-in">Dine In</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="dine-in_take-out" id="take-out" value="take-out"><label for="take-out">Good</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label>* Overall Service Quality: </label>
+            </div>
+            <div class="input-field">
+                <ul>
+                    <li class="radio">
+                        <input type="radio" name="overall-service-quality" id="excellent" value="excellent"><label for="excellent" checked>Excellent</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="overall-service-quality" id="good" value="good"><label for="good">Good</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="overall-service-quality" id="average" value="average"><label for="average">Average</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="overall-service-quality" id="dissatisfied" value="dissatisfied"><label for="dissatisfied">Dissatisfied</label>
+                    </li>
+                    <li class="radio">
+                        <input type="radio" name="overall-service-quality" id="not-sure" value="not-sure"><label for="not-sure">Not Sure</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label for="cleanliness">* Cleanliness</label>
+            </div>
+            <div class="input-field">
+                <select name="cleanliness" class="cleanliness" id="dropdown">
+                        <option disabled selected value>---Select an option---</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="dissatisfied">Dissatisfied</option>
+                        <option value="not-sure">Not Sure</option>
+                    </select>
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label for="order-accuracy">* Order Accuracy</label>
+            </div>
+            <div class="input-field">
+                <select name="order-accuracy" class="order-accuracy" id="dropdown">
+                        <option disabled selected value>---Select an option---</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="dissatisfied">Dissatisfied</option>
+                        <option value="not-sure">Not Sure</option>
+                    </select>
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label for="speed-of-service">* Speed of Service</label>
+            </div>
+            <div class="input-field">
+                <select name="speed-of-service" class="speed-of-service" id="dropdown">
+                        <option disabled selected value>---Select an option---</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="dissatisfied">Dissatisfied</option>
+                        <option value="not-sure">Not Sure</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label for="overall-experience">* Overall Experience</label>
+            </div>
+            <div class="input-field">
+                <select name="overall-experience" class="overall-experience" id="dropdown">
+                    <option disabled selected value>---Select an option---</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="not-sure">Not Sure</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label>Services that should be added in the future
+                (Check all that apply):</label>
+            </div>
+            <div class="input-field">
+                <ul>
+                    <li class="checkbox">
+                        <input type="checkbox" name="services-to-be-added" id="car-wash" value="car-wash"> <label for="car-wash">Car Wash</label>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="services-to-be-added" id="viewing-center" value="viewing-center"> <label for="viewing-center">Viewing Center</label>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="services-to-be-added" id="bar" value="bar"> <label for="bar">Bar</label>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" name="services-to-be-added" id="rest-room" value="rest-room"> <label for="rest-room">Rest Room</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-record">
+            <div class="label">
+                <label for="comments-questions-suggestions">Any comments, questions or suggestions?</label>
+            </div>
+            <div class="input-field">
+                <textarea name="comments-questions-suggestions" id="comments-questions-suggestions" cols="30" rows="10" required placeholder="Type your comments, questions, or questions here"></textarea>
+            </div>
+        </div>
+        <div class="confirm_submit-reset">
+            <div class="submit">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+            <div class="reset">
+                <button type="reset" id="reset">Reset</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
