@@ -136,6 +136,9 @@ button:hover {
 /*=======================Media Queries========================*/
 
 @media screen and (max-width: 900px) {
+    form#survey-form {
+        width: 90%;
+    }
     div.form-record {
         flex-flow: column;
     }
@@ -163,5 +166,8 @@ button:hover {
     }
     select {
         width: 100%;
+    }
+    form#survey-form {
+        width: 95%;
     }
 }

@@ -13,8 +13,9 @@
     <h1 id="title">
         Restaurant Evaluation Survey
     </h1>
-    <p id="description">Please let us know your experience with our services. <br> (All Fields Marked with * are complusory).</p>
-    <form action="#" method="GET" id="survey-form">
+    <p id="description">Please let us know your experience with our services. <br> (All Fields Marked with * are complusory).
+    </p>
+    <form action="#" method="POST" id="survey-form">
         <div class="form-record">
             <div class="label">
                 <label id="name-label" for="name">* Name: </label>
@@ -92,13 +93,13 @@
             </div>
             <div class="input-field">
                 <select name="cleanliness" class="cleanliness" id="dropdown">
-                        <option disabled selected value>---Select an option---</option>
-                        <option value="excellent">Excellent</option>
-                        <option value="good">Good</option>
-                        <option value="average">Average</option>
-                        <option value="dissatisfied">Dissatisfied</option>
-                        <option value="not-sure">Not Sure</option>
-                    </select>
+                    <option disabled selected value>---Select an option---</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="not-sure">Not Sure</option>
+                </select>
             </div>
         </div>
         <div class="form-record">
@@ -107,13 +108,13 @@
             </div>
             <div class="input-field">
                 <select name="order-accuracy" class="order-accuracy" id="dropdown">
-                        <option disabled selected value>---Select an option---</option>
-                        <option value="excellent">Excellent</option>
-                        <option value="good">Good</option>
-                        <option value="average">Average</option>
-                        <option value="dissatisfied">Dissatisfied</option>
-                        <option value="not-sure">Not Sure</option>
-                    </select>
+                    <option disabled selected value>---Select an option---</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="not-sure">Not Sure</option>
+                </select>
             </div>
         </div>
         <div class="form-record">
@@ -122,12 +123,12 @@
             </div>
             <div class="input-field">
                 <select name="speed-of-service" class="speed-of-service" id="dropdown">
-                        <option disabled selected value>---Select an option---</option>
-                        <option value="excellent">Excellent</option>
-                        <option value="good">Good</option>
-                        <option value="average">Average</option>
-                        <option value="dissatisfied">Dissatisfied</option>
-                        <option value="not-sure">Not Sure</option>
+                    <option disabled selected value>---Select an option---</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="not-sure">Not Sure</option>
                 </select>
             </div>
         </div>
@@ -149,7 +150,7 @@
         <div class="form-record">
             <div class="label">
                 <label>Services that should be added in the future
-                (Check all that apply):</label>
+                    (Check all that apply):</label>
             </div>
             <div class="input-field">
                 <ul>
@@ -157,7 +158,8 @@
                         <input type="checkbox" name="services-to-be-added" id="car-wash" value="car-wash"> <label for="car-wash">Car Wash</label>
                     </li>
                     <li class="checkbox">
-                        <input type="checkbox" name="services-to-be-added" id="viewing-center" value="viewing-center"> <label for="viewing-center">Viewing Center</label>
+                        <input type="checkbox" name="services-to-be-added" id="viewing-center" value="viewing-center">
+                        <label for="viewing-center">Viewing Center</label>
                     </li>
                     <li class="checkbox">
                         <input type="checkbox" name="services-to-be-added" id="bar" value="bar"> <label for="bar">Bar</label>
